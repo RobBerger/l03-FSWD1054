@@ -6,7 +6,7 @@ class ContactSummary extends React.Component {
     return (
     <div className={styles.summary}>
      { this.props.contacts.length ?
-       <p>Total Number of Contacts: <span>{this.props.contacts.length}</span></p> :
+       <p>Total Number of Contacts: <span className={styles.count}>{this.props.contacts.length}</span></p> :
        <p>Sorry, no contacts found :(</p> }
     </div>)
   }
