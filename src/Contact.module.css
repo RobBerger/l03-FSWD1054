@@ -1,0 +1,11 @@
+.contact td {
+    padding: 0.5rem;
+  }
+  
+  .contact .name {
+    text-transform: uppercase;
+  }
+  
+  tr:nth-child(even).contact {
+    background-color: lightgray;
+  }
