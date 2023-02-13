@@ -1,16 +1,13 @@
 import React from 'react';
 import contacts from './Contacts.js'
 import ContactList from './ContactList.js'
+import ContactSummary from './ContactSummary.js'
 
 function App() {
   return (
     <div>
       <ContactList contacts={contacts} />
-      <div>
-        { this.props.contacts.length ?
-          <p>Total Number of Contacts: <span>{this.props.contacts.length}</span></p> :
-          <p>Sorry, no contacts found :(</p> }
-      </div>)
+      <ContactSummary contacts={contacts} />
     </div>
   )
 }
