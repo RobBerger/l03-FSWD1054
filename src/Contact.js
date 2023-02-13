@@ -1,9 +1,10 @@
 function Contact(props) {
+  let { contact: { first_name, last_name, email, phone } } = props
   return (
     <tr>
-      <td>{props.contact.first_name} {props.contact.last_name}</td>
-      <td><a href={`mailto:${props.contact.email}`}>{props.contact.email}</a></td>
-      <td>{props.contact.phone}</td>
+      <td>{first_name} {last_name}</td>
+      <td><a href={`mailto:${email}`}>{email}</a></td>
+      <td>{phone}</td>
     </tr>
   )
 }
