@@ -1,31 +1,16 @@
 import React from 'react';
 import contacts from './Contacts.js'
-import Contact from './Contact.js'
+import ContactList from './ContactList.js'
 
 function App() {
-  let contactList = contacts.map((contact, index) => {
-    return (<Contact contact={contact}/>)
-  })
-
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-          </tr>
-        </thead>
-        <tbody>
-          {contactList}
-        </tbody>
-      </table>
+      <ContactList contacts={contacts} />
       <div>
-        {contacts.length ?
-          <p>Total Number of Contacts: <span>{contacts.length}</span></p> :
+        { this.props.contacts.length ?
+          <p>Total Number of Contacts: <span>{this.props.contacts.length}</span></p> :
           <p>Sorry, no contacts found :(</p> }
-      </div>
+      </div>)
     </div>
   )
 }
