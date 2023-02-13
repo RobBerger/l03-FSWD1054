@@ -1,0 +1,8 @@
+.heading th {
+    text-align: left;
+    padding: 0.5rem;
+  }
+  
+  table.contactList {
+    border-collapse: collapse;
+  }
