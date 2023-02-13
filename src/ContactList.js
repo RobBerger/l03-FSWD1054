@@ -1,6 +1,7 @@
 import React from 'react'
 import Contact from './Contact.js'
 import styles from './ContactList.module.css'
+import Table from 'react-bootstrap/Table'
 
 class ContactList extends React.Component {
 
@@ -15,10 +16,10 @@ class ContactList extends React.Component {
 
   render() {
     return (
-      <table className={styles.contactList}>
+      <Table>
         <thead>{this.headings()}</thead>
         <tbody>{this.contacts()}</tbody>
-      </table>
+      </Table>
     )
   }
 }
