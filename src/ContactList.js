@@ -15,7 +15,7 @@ class ContactList extends React.Component {
 
   render() {
     return (
-      <Table>
+      <Table striped bordered>
         <thead>{this.headings()}</thead>
         <tbody>{this.contacts()}</tbody>
       </Table>
