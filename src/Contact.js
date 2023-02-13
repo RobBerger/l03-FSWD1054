@@ -1,7 +1,8 @@
 import React from 'react';
 
-function Contact(props) {
-  let { contact: { first_name, last_name, email, phone } } = props
+class Contact extends React.Component {
+  render() {
+  let { contact: { first_name, last_name, email, phone } } = this.props
   return (
     <tr>
       <td>{first_name} {last_name}</td>
@@ -9,6 +10,7 @@ function Contact(props) {
       <td>{phone}</td>
     </tr>
   )
+  }
 }
   
   export default Contact
